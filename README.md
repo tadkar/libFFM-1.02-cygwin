@@ -18,13 +18,13 @@ It also appears that there are minor differences in the location of various func
 
 So the summary of steps from a fresh download of source from http://www.csie.ntu.edu.tw/~r01922136/libffm/
 
-A)	Download the two extra header files drand48.h and stringconv.h to the source directory
-B)	Ffm.cpp – Add the line #include “drand48.h”
-C)	Ffm-predict.cpp – Add the line #include <cstdlib>
-D)	Ffm-train.cpp – Add the lines
-- #include <fstream>
-- #include <cstdlib>
-- #include “stringconv.h”
+*	Download the two extra header files drand48.h and stringconv.h to the source directory
+*	Ffm.cpp – Add the line `#include “drand48.h”`
+*	Ffm-predict.cpp – Add the line `#include <cstdlib>`
+*	Ffm-train.cpp – Add the lines
+    ``` #include <fstream>
+     #include <cstdlib>
+     #include “stringconv.h”```
 
 Tested on Windows x64, Cygwin64 with GCC 4.9.2
 
